@@ -3,7 +3,7 @@ import Koa from 'koa'
 import logger from 'koa-logger'
 import mongoose from 'mongoose'
 import helmet from 'koa-helmet'
-import cors from 'koa-cors'
+import cors from '@koa/cors'
 import jwt from 'koa-jwt'
 // import serve from 'koa-static'
 import routing from './routes'
@@ -12,7 +12,7 @@ import errorHandle from './middlewares/errorHandle'
 
 mongoose.connect(connexionString)
 // mongoose promise 风格 [mongoose.Promise = require('bluebird')]
-mongoose.Promise = global.Promise
+// mongoose.Promise = global.Promise
 
 // create Koa application
 const app = new Koa();

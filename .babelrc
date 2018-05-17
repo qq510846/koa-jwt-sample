@@ -1,5 +1,8 @@
 {
-    "presets": ["es2015"],
-    "plugins": ["transform-async-to-generator","syntax-async-functions","add-module-exports"]
-  }
-  
+  "presets": [
+    ["env"]
+  ],
+  "plugins": [
+    "babel-plugin-transform-runtime"
+  ]
+}
